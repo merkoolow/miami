@@ -1,0 +1,165 @@
+.phone {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.phone__image {
+	cursor: pointer;
+	margin-left: 20px;
+	position: relative;
+}
+
+.phone p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 12px;
+	margin-top: 6px;
+}
+
+.phone__container {
+	overflow: hidden;
+	width: 150px;
+	margin-right: -25px;
+}
+
+.phone__container p {
+	transform: translateX(100%);
+	transition: transform 1s;
+}
+
+.phone__image:hover + .phone__container > p {
+	transform: translateX(0);
+}
+
+[data-tooltip]::after {
+	content: attr(data-tooltip); /* Выводим текст */
+	display: flex; /* Для выравнивания текста (контента) по центру */
+	justify-content: center; /* Выравнивание текста по центру, по горизонтали */
+	align-items: center; /* Выравнивание текста по центру, по вертикали */
+	position: absolute; /* Абсолютное позиционирование */
+	width: 90px; /* Ширина подсказки */
+	left: 50%; /* Смещение элемента вправо на половину ширины контейнера*/
+	transform: translateX(-50%); /* Смещение элемента влево на половину его ширины */
+	top: 0; /* Положение подсказки */
+	background: rgba(57, 137, 201, 0); /* Синий цвет фона с прозрачностью "0" */
+	font-weight: bold; /* Жирность текста */
+	border-radius: 5px; /* Радиус углов */
+	color: #fff; /* Цвет текста */
+	padding: 5px; /* Поля вокруг текста */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+	pointer-events: none; /* Подсказка */
+	opacity: 0; /* Прозрачность 0 */
+	transition: 1s; /* Время анимации*/
+}
+
+[data-tooltip]:hover::after {
+	opacity: 1;
+	background: rgba(57, 137, 201, 0.2);
+	transform: translateX(-50%) translateY(30px);
+}
+
+.button {
+	height: 56px;
+	border: none;
+	border-radius: 8px;
+	background: #0075FF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 14px;
+	color: white;
+	cursor: pointer;
+	transition:
+			background-color 400ms ease-in-out,
+			box-shadow 200ms ease-in-out;
+}
+
+.button_secondary {
+	border: 3px #005ECC solid;
+	background: transparent;
+	font-weight: 700;
+	color: #0075FF;
+}
+
+.button:hover {
+	box-shadow: 0 13px 27px 0 #0053B575;
+	background-color: #005ECC;
+}
+
+.button:active {
+	box-shadow: 0 8px 14px 0 #0053B57A;
+}
+
+.button > span {
+	display: block;
+	transition:
+			transform 100ms ease-in-out,
+			color 200ms ease-in-out;
+}
+
+.button:hover > span {
+	color: white;
+}
+
+.button_secondary:active span {
+	transform: scale(0.9);
+	color: cornflowerblue;
+}
+
+/*@media screen and (max-width: 640px) {*/
+/*	.phone {*/
+/*		display: flex;*/
+/*		flex-direction: column;*/
+/*		align-items: flex-end;*/
+/*	}*/
+
+/*	.phone__image {*/
+/*		display: flex;*/
+/*		align-items: center;*/
+/*		margin: 0 0 10px 0;*/
+/*	}*/
+
+/*	.phone__image > img {*/
+/*		width: 24px;*/
+/*		height: 28px;*/
+/*		transform: scale(-1, 1);*/
+/*		margin-left: 10px;*/
+/*		order: 2;*/
+/*	}*/
+
+/*	[data-tooltip]:after {*/
+/*		position: static;*/
+/*		opacity: 1;*/
+/*		left: 0;*/
+/*		transform: none;*/
+/*		order: 1;*/
+/*	}*/
+
+/*	[data-tooltip]:hover::after {*/
+/*		transform: none;*/
+/*	}*/
+
+/*	.phone__container {*/
+/*		width: auto;*/
+/*		margin: 0;*/
+/*	}*/
+
+/*	.phone__container > p {*/
+/*		transform: translateX(0);*/
+/*		margin: 0;*/
+/*	}*/
+/*}*/
+
+@media screen and (max-width: 1000px) {
+	.phone__container p {
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.phone {
+		display: none;
+	}
+}

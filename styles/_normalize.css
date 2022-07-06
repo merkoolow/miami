@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+*:active {
+	-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	border: none;
+	background: transparent;
+	display: block;
+}
+
+img {
+	display: block;
+}
+
+button:active {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: rgba( 96, 157, 160);
+	transition: color 200ms ease-in-out;
+}
+
+a:hover {
+	color: #9FADC2
+}
+
+ul {
+	list-style: none;
+}

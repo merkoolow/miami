@@ -1,0 +1,80 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	align-items: center;
+	border: 1px rgba(159, 173, 194, 0.2) solid;
+	box-shadow: 5px 5px 16px -7px #000000;
+	border-radius: 8px;
+	width: 324px;
+	min-height: 100px;
+	flex-shrink: 0;
+}
+
+.card__avatar {
+	margin-bottom: 32px;
+}
+
+.card__avatar > img {
+	border-radius: 50%;
+}
+
+.card__name {
+	margin-bottom: 4px;
+}
+
+.card__position {
+	margin-bottom: 4px;
+}
+
+.card__comment-text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+	color: #3E3E3E;
+	text-align: center;
+}
+
+.card__name > p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #0075FF;
+	margin-bottom: 16px;
+}
+
+.card__position > p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 27px;
+	color: #9FADC2;
+}
+
+@media screen and (max-width: 1000px) {
+	.card {
+		width: 254px;
+		box-shadow: 3px 3px 8px -4px #000000;
+		padding: 20px;
+	}
+
+	.card__name > p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.card {
+		width: 234px;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.card {
+		width: 234px;
+		padding: 10px;
+	}
+}

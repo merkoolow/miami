@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href=styles/_normalize.css>
+		<link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/menu.css">
+		<link rel="stylesheet" href="styles/navigation.css">
+		<link rel="stylesheet" href="styles/common.css">
+		<link rel="stylesheet" href="styles/page.css">
+		<link rel="stylesheet" href="styles/footer.css">
+		<link rel="stylesheet" href="styles/about.css">
+		<link rel="stylesheet" href="styles/card.css">
+		<link rel="stylesheet" href="styles/contacts.css">
+		<link rel="stylesheet" href="styles/form.css">
+		<link rel="stylesheet" href="styles/gallery.css">
+		<link rel="stylesheet" href="styles/slider.css">
+		<link rel="stylesheet" href="styles/testimonials.css">
+		<link rel="stylesheet" href="styles/reunion.css">
+		<title>Miami</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="header__container">
+
+				<menu class="menu header__menu" id="menu">
+					<div class="menu__wrapper">
+
+						<div class="menu__top">
+							<button class="menu__button">
+								<div></div>
+								<div></div>
+								<div></div>
+							</button>
+							<img class="logo menu__logo" src="assets/images/logo.svg" alt="logo">
+							<div class="menu__phone phone">
+								<div class="phone__image" data-tooltip="click to copy" id="headerPhoneImage">
+									<img  src="assets/images/phone.svg" alt="phone">
+								</div>
+								<div class="phone__container">
+									<p id="headerPhone" data-phone="+380669996698">+380 66999-66-98</p>
+								</div>
+							</div>
+						</div>
+
+						<nav class="navigation menu__navigation" id="navigation">
+							<ul class="navigation__list">
+								<li><a class="navigation__link navigation__link_active" href="#header">HOME</a></li>
+								<li><a class="navigation__link" href="#about">ABOUT US</a></li>
+								<li><a class="navigation__link" href="#gallery">GALLERY</a></li>
+								<li><a class="navigation__link" href="#consultation">CONSULTATION</a></li>
+								<li><a class="navigation__link" href="#testimonials">TESTIMONIALS</a></li>
+								<li><a class="navigation__link" href="#contacts">CONTACTS</a></li>
+							</ul>
+
+							<div class="mobile__phone">
+								<img  src="assets/images/phone.svg" alt="phone">
+								<p>+380 66999-66-98</p>
+							</div>
+						</nav>
+					</div>
+				</menu>
+
+				<div class="header__title">
+					<div class="header__name-decoration"></div>
+					<h1 class="header__name">
+						Miami <br>
+						Condo Kings
+					</h1>
+				</div>
+			</div>
+		</header>
+
+		<main id="page" class="page">
+			<div class="page__wrapper">
+
+				<section class="page__section about" id="about">
+					<p class="about__description">
+						Miami best <br>
+						Real estate <br>
+						<a href="#">here</a>
+					</p>
+					<div class="about__content">
+						<p class="about__text about__text_expensive">Over 50 years experience in love.</p>
+						<p class="about__text">
+							Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism,
+							which originated in the music of the early twentieth century,
+							microforms, found a distant historical.
+						</p>
+
+						<p class="about__text">
+							The market leader in real estate since 2003. Awards Real Estate Company, 2010, 2011, 2013.
+							More than 200 satisfied customers premium segment.
+							We focus only on new buildings and high-level doskanalno know this area better than other specialists.
+							Working directly with developers - so have more useful information about the profitable deals.
+						</p>
+
+						<p class="about__text about__text_bold">
+							We will never be late! <br>
+							Guaranteed secure transaction - 100%
+						</p>
+					</div>
+				</section>
+
+				<section class="page__section gallery" id="gallery">
+					<h3 class="page__section-heading gallery__heading">Gallery</h3>
+					<div class="gallery__container">
+
+						<div class="gallery__images marina">
+							<img class="gallery__image" src="assets/images/image_1.jpg" alt="marina palms">
+							<img class="gallery__image" src="assets/images/image_2.jpg" alt="marina palms">
+						</div>
+						<div class="gallery__images-description">
+							<span>Marina Palms</span> / North Miami Beach, FL 33162
+							<div class="gallery__delimiter"></div>
+						</div>
+
+						<div class="gallery__images edition">
+							<img class="gallery__image" src="assets/images/image_3.jpg" alt="miami beach">
+							<img class="gallery__image" src="assets/images/image_4.jpg" alt="miami beach">
+						</div>
+						<div class="gallery__images-description">
+							<span>Edition Residens</span> / Miami Beach, FL 33139
+							<div class="gallery__delimiter"></div>
+						</div>
+
+						<div class="gallery__images faena">
+							<img class="gallery__image" src="assets/images/image_5.jpg" alt="faena house">
+							<img class="gallery__image" src="assets/images/image_6.jpg" alt="faena house">
+						</div>
+						<div class="gallery__images-description">
+							<span>Faena House</span> / Miami Beach, FL 33140
+						</div>
+					</div>
+
+					<button class="gallery__button button button_secondary">
+						<span>View all</span>
+					</button>
+				</section>
+
+				<section class="page__section testimonials" id="testimonials">
+					<h3 class="page__section-heading testimonials__heading">Testimonials</h3>
+					<slider class="testimonials__slider slider" id="testimonialsSlider">
+						<div class="slider__button slider__button_left"></div>
+						<div class="slider__wrapper">
+							<ul class="slider__list">
+								<!--By script-->
+							</ul>
+						</div>
+						<div class="slider__button slider__button_right"></div>
+					</slider>
+				</section>
+
+				<section class="page__section contacts" id="contacts">
+					<h3 class="page__section-heading contacts__heading">Contact us</h3>
+					<div class="contacts__container">
+						<div class="contacts__container-box">
+							<div class="contacts__information">
+								<p class="contacts__text_expensive">Phone</p>
+								<p class="contacts__text contacts_number">+1 234 5555-55-55</p>
+								<p class="contacts__text_expensive">Email</p>
+								<p class="contacts__text">hello@miami.com</p>
+							</div>
+							<div class="contacts__address">
+								<p class="contacts__text_expensive">Address</p>
+								<p class="contacts__text">400 first ave. n. suite 700</p>
+								<p class="contacts__text">Minneapolis, MN 55401</p>
+							</div>
+						</div>
+
+						<form class="contacts__form form" action="api/feedback" method="post" id="reunionForm">
+
+							<legend class="form__helper" id="consultation">Відправ форму та отримай подарунок <nobr>&#128153;&#128155;</nobr></legend>
+
+							<input class="form__input form_name" type="text" name="name" placeholder="Прізвище">
+							<input class="form__input form_email" type="email" name="email" placeholder="Електронна адреса">
+							<textarea class="form__input form__input_textarea" name="message" placeholder="Коментар"></textarea>
+
+							<button class="button form__button">
+								<span>Consultation</span>
+							</button>
+
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer class="footer" id="footer">
+			<img class="logo footer__logo" src="assets/images/logo.svg" alt="logo">
+		</footer>
+
+		<script src="scripts/preloader.js"></script>
+		<script src="scripts/common.js"></script>
+		<script src="scripts/slider.js"></script>
+		<script src="scripts/reunion.js"></script>
+
+		<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="width: 0; height: 0; position: fixed; top: -100vh;">
+			<defs>
+				<clipPath id="hexagonClip" clipPathUnits="objectBoundingBox">
+					<path d="M 0 27
+							A 4 4 0 0 1 2 23
+							L 48 2
+							A 8 8 0 0 1 52 2
+							L 98 23
+							A 4 4 0 0 1 100 27
+							L 100 73
+							A 4 4 0 0 1 98 77
+							L 52 98
+							A 8 8 0 0 1 48 98
+							L 2 77
+							A 4 4 0 0 1 0 73
+							z
+						" fill="white" stroke-width="2" transform="scale(0.01, 0.01)">
+					</path>
+				</clipPath>
+			</defs>
+		</svg>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+.testimonials {
+	margin-bottom: 104px;
+}
+
+@media screen and (max-width: 1000px) {
+	.testimonials {
+		margin-bottom: 64px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.testimonials {
+		margin-bottom: 30px;
+	}
+}
